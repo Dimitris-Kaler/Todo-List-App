@@ -1,0 +1,143 @@
+body {
+    text-align: center;
+    background:linear-gradient(to right,rgba(255, 80, 80, 0.541),rgba(59, 1, 1, 0.603))
+}
+
+#toDo {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    min-width:350px;
+   /* background-color:rgb(134, 134, 134) ;*/
+
+    border: 2px solid black;
+    /* background: linear-gradient(to right, rgb(6, 1, 31), rgb(4, 50, 255)); */
+    color:black;
+    box-shadow:0.5rem 0.8rem grey;
+
+}
+
+#main {
+    /* margin-top: 10rem; */
+    /* width: 50%;  */
+    /* margin: auto;
+    height: 20vh; */
+    padding:2vh;
+     background: linear-gradient(to right, rgb(0, 6, 39), rgb(22, 6, 252));
+    /* background-color:blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input {
+    margin-right: 2rem;
+    width: 50%;
+    height: 5vh;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+button {
+    width: 8rem;
+    border-radius: 5px;
+    background: rgb(1, 63, 1);
+    color: rgb(255, 255, 255);
+    height: 5vh;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+
+#toDoUl {
+    margin: 0;
+    padding: 0;
+    justify-self: flex-start;
+    /* border:2px solid white; */
+    /* width: 46.6%; */
+    font-size: 15px;
+    /* background: linear-gradient(to right, rgb(6, 1, 31), rgb(4, 50, 255)); */
+    /* color: white; */
+    background-color:rgba(184, 184, 184, 0.932);
+    color:black;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+/* #doneUl{
+    display:none;
+} */
+
+li {
+    width: 100%;
+    background: linear-gradient(to right, rgba(6, 1, 31, 0.5), rgba(4, 50, 255, 0.5));
+    text-align: center;
+    list-style: none;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    cursor:pointer;
+
+}
+
+#createdBtn {
+    color: white;
+    background-color: red;
+    width: 4rem;
+    height: 5vh;
+    cursor: pointer;
+
+}
+
+#createdBtn:hover {
+    background-color: rgb(255, 49, 49);
+
+
+}
+
+#createdBtn:active {
+    background-color: green;
+}
+
+.done {
+    text-decoration: line-through;
+    color: red;
+    background-color:green;
+
+}
+#doneUl{
+    margin: 0;
+    padding: 0;
+    /* background-color:rgb(1, 63, 1); */
+    font-size: 15px;
+    /* background: linear-gradient(to right, rgb(5, 34, 1), rgb(3, 189, 34)); */
+    background-color:rgba(2, 156, 36, 0.527);
+    color: black;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.doneUl {
+    display: none;
+    text-align: center;
+}
+
+.show {
+    display: block;
+    text-align:center;
+}
+
+
+#footer {
+    background: linear-gradient(to right, rgb(0, 6, 39), rgb(22, 6, 252));
+    padding:2vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
